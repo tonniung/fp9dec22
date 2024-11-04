@@ -1,0 +1,942 @@
+﻿<!DOCTYPE html>
+<html lang="da" translate="no" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="google" content="notranslate">
+    <title>FP9-Matematik_med_hjælpemidler-digital prøve</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/tools.css" type="text/css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/uvm-top-logos.js"></script>
+    <script src="js/uvm_html5_opgave_samlet.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/flowtype.js"></script>
+    <script type="text/javascript" src="js/video-player-subtitles.js"></script>
+    <script type="text/javascript" src="js/browser-detect.js"></script>
+    <script type="text/javascript" src="js/video-player-samlet.js"></script>
+    <script type="text/javascript" src="js/audio-player.js"></script>
+    <script src="js/imageSlider.js"></script>
+    <script type="text/javascript" src="js/jquery.tooltip.js"></script>
+    <style>
+        .frac {
+            display: inline-flex;
+            flex-direction: column;
+            width: auto;
+            line-height: 1em;
+            vertical-align: middle;
+        }
+
+        .frac div {
+            line-height: 1em;
+            text-align: center;
+        }
+
+        .frac div:not(:last-child) {
+            border-bottom: 1px solid #000000;
+        }
+
+        .point h2 {
+            float: left;
+        }
+
+        .point span {
+            float: right;
+        }
+
+        .box span {
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body data-taskid="" data-fag="fs" style="visibility:hidden">
+    <div class="wrapper">
+        <div class="top">
+            <div id="uvmLogo"><img src="images/uvm_logo_stuk.png" alt="logo" /></div>
+        </div>
+        <!--End Top-->
+        <div class="main">
+            <div id="menuWrapper">
+                <div id="menu">
+                </div> <!-- END MENU -->
+                <div id="taskNumber">&nbsp;</div>
+            </div>
+            <div id="content">
+
+                <!--Forside-->
+                <div class="PAGE" data-id="1" data-parentid="0" data-layout="0" data-menutekst="Forside">
+                    <div style="height:95px;">&nbsp;</div>
+                    <div style="height:305px;">
+                        <hr style="margin-bottom: 20px; border-bottom: 1px solid black; border-top: 0px solid black; width: 200px" align="left" />
+                        <div style="font-size: 1.7em; font-weight: bold; padding: 5px 0 5px 0;">Matematik FP9</div>
+                        <hr style="margin-top: 20px; border-bottom: 1px solid black; border-top: 0px; width: 455px;" align="left" />
+                        <br />Prøven med hjælpemidler
+                        <br /><br />
+                        Til dette opgavesæt hører regnearksfiler til opgave 2 og 5 og et svarark til opgave 7
+                    </div>
+                    <br /><br /><br /><br />
+                    Fredag den 2. december 2022
+                    <br />
+                    Kl. 10.00-13.00
+                </div>
+
+                <!--Mellemrum-->
+                <div class="PAGE" data-id="2" data-parentid="0" data-layout="0" data-menutekst=""></div>
+
+
+                <!--Vejledning-->
+                <div class="PAGE" data-id="3" data-parentid="0" data-layout="0" data-menutekst="Vejledning">
+                    Kære elev
+                    <br /><br />
+                    Prøven består af 7 opgaver. Du har 3 timer til at løse dem.
+                    <br /><br />
+                    Ved hver opgave står der, hvor mange point den højst kan give.
+					<br />
+                    Prøven kan i alt højst give 64 point. Du bestemmer selv, hvilken rækkefølge du laver opgaverne i, og hvor lang tid du vil bruge på hver af dem.
+                    <br /><br />
+                    Det er vigtigt, at du begrunder dine svar i <i>alle</i> opgaver.
+                    <br />
+                    Det betyder, at du i hver opgave skal vise eller forklare, hvordan du er nået frem til dit svar. Du kan fx begrunde dit svar med tekst, beregninger og/eller tegninger.
+                    <br /><br />
+                    En del af de point, du kan få i hver opgave, kommer fra dine begrundelser. I de fleste opgaver kan du ikke få det højeste antal point, hvis du ikke begrunder dit svar, selv om dine resultater er rigtige.
+                    <br /><br />
+                    I nogle af opgaverne skal du beregne et antal eller en størrelse. I andre opgaver skal du vise, hvordan du finder frem til et bestemt resultat eller afgøre, om en påstand er sand eller falsk.
+                    <br /><br />
+                    Der er også opgaver, hvor du skal løse et matematisk problem ved at undersøge. I disse opgaver forventer vi ikke, at du på forhånd
+                    kender en metode, du kan bruge til at løse problemet. Ordet ’undersøg’ signalerer, at du selv skal finde på en god måde at løse problemet på ved at bruge matematik, du kender.
+                    <br /><br />
+                    God arbejdslyst.
+                    <br /><br />
+                    Styrelsen for Undervisning og Kvalitet
+                    <br /><br /><br /><br />
+                </div>
+
+                <!--Mellemrum-->
+                <div class="PAGE" data-id="4" data-parentid="0" data-layout="0" data-menutekst=""></div>
+
+                <!--Opgave 1-->
+                <div class="PAGE" data-id="5" data-parentid="0" data-layout="0" data-menutekst="Opgave 1">
+                    <div class="box-group">
+                        <div class="group">
+                            <h1 class="box blue header-number" style="margin-right:20px;">1</h1>
+                        </div>
+                        <div class="group fill">
+                            <span class="box fill blue" style="padding:2px 6px;justify-content:space-between;">
+                                <h2 class="header-title">I skøjtehallen</h2>
+                                <span style="line-height: 28px;">Opgave 1 giver højst 11 point</span>
+                            </span>
+                        </div>
+                    </div>
+                    <br /><br />
+
+                    <div style="position:relative">
+                        <table style="width:100%;">
+                            <tr>
+                                <td style="vertical-align: top;width:40px;"></td>
+                                <td style="vertical-align: text-top; padding-right:6%; padding-top: 7%;">
+                                    <br />
+                                    Magnus vil i skøjtehallen. Tabellen viser skøjtehallens priser.
+                                    <br /><br />
+                                </td>
+                                <td style="width:30%;">
+                                    <div style="width:100%;">
+                                        <img src="files/194549_billede_opg1.jpg" alt="" width="100%">
+                                    </div>
+                                    <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;width:40px;"></td>
+                                <td colspan="2">
+                                    <br />
+                                    <table style="margin-left: 10%; width: 70%; border: 1px solid black; border-collapse: collapse; text-align: center;" cellPadding="10">
+                                        <tr style="background-color: #82d0f5;">
+                                            <td style="width: 33%; border-right: 1px solid black; border-bottom: 1px solid black;">&nbsp;
+                                                
+                                            </td>
+                                            <td style="width: 33%; border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                Pris for børn<br />(under 16 år)
+                                            </td>
+                                            <td style="width: 33%; border-bottom: 1px solid black;">
+                                                Pris for voksne<br />(16 år og over)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left; border-right: 1px solid black; border-bottom: 1px solid black; background-color: #82d0f5;">
+                                                Enkeltbillet
+                                            </td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                25 kr.
+                                            </td>
+                                            <td style="border-bottom: 1px solid black;">
+                                                50 kr.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left; border-right: 1px solid black; border-bottom: 1px solid black; background-color: #82d0f5;">
+                                                10-turskort
+                                            </td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                219 kr.
+                                            </td>
+                                            <td style="border-bottom: 1px solid black;">
+                                                465 kr.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: left; border-right: 1px solid black; border-bottom: 1px solid black; background-color: #82d0f5;">
+                                                3-månederskort
+                                            </td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                360 kr.
+                                            </td>
+                                            <td style="border-bottom: 1px solid black;">
+                                                665 kr.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <br /><br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"><span class="box blue">1.1</span></td>
+                                <td colspan="2">
+                                    <div style="padding-top:calc(0.1em + 2px);">Hvor stor er prisforskellen på et 10-turskort til børn og et 10-turskort til voksne?
+                                        <br /><br /><br />
+                                        Magnus er 15 år.
+                                        <br /><br />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"><span class="box blue">1.2</span></td>
+                                <td colspan="2">
+                                    <div style="padding-top:calc(0.1em + 2px);">Hvor mange penge sparer Magnus pr. tur i skøjtehallen, hvis han køber et 10-turskort i stedet for 10 enkeltbilletter?
+                                        <br /><br /><br />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"><span class="box blue">1.3</span></td>
+                                <td colspan="2">
+                                    <div style="padding-top:calc(0.1em + 2px);">Hvor mange procent koster et 3-månederskort mere for voksne end for børn?
+                                        <br /><br /><br />
+                                        Magnus overvejer, hvad der er billigst for ham, hvis han vil i skøjtehallen flere gange.
+                                        <br /><br />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"><span class="box blue">1.4</span></td>
+                                <td colspan="2"> 
+                                    <div style="padding-top:calc(0.1em + 2px);">
+                                        Undersøg, hvor mange gange Magnus skal gå i skøjtehallen på 3 måneder, for at det bedst kan betale sig for ham at købe
+                                        <ul style="line-height: 1.6em; padding: 0; margin-left: 4%; margin-top: 0.05em;">
+                                            <li>enkeltbilletter</li>
+                                            <li>10-turskort</li>
+                                            <li>et 3-månederskort.</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="width:30%;position:absolute;top:0;right:0;">
+                            <img src="files/194549_billede_opg1.jpg" alt="" width="100%">
+                            <span style="font-size: 80%;">Foto: Colourbox</span>
+                        </div>
+                    </div>
+                    <br /><br /><br /><br />
+                </div>
+
+                <!--Opgave 2-->
+                <div class="PAGE" data-id="6" data-parentid="0" data-layout="0" data-menutekst="Opgave 2">
+                    <div class="box-group">
+                        <div class="group">
+                            <h1 class="box blue header-number" style="margin-right:20px;">2</h1>
+                        </div>
+                        <div class="group fill">
+                            <span class="box fill blue" style="padding:2px 6px;justify-content:space-between;">
+                                <h2 class="header-title">Skøjtekonkurrence</h2>
+                                <span style="line-height: 28px;">Opgave 2 giver højst 6 point</span>
+                            </span>
+                        </div>
+                    </div>
+                    <br /><br />
+
+                    <div style="position:relative">
+                        <table style="width:100%;">
+                            <tr>
+                                <td style="vertical-align: top;width:40px;"></td>
+                                <td style="vertical-align: text-top; padding-right: 6%; padding-top: 5%;">
+                                    <br /><br />
+                                    Tabellen viser tre skøjteløberes 10 seneste tider på 500 m hurtigløb. Tiderne står også i filen <a href="#" onclick="UVM.view.funcLoadMenu(13, 0); UVM.view.funcLoadContent(13, 0);">TIDER_DEC_2022</a>.
+                                    <br /><br />
+                                </td>
+                                <td style="width:30%;">
+                                    <div style="width:100%;">
+                                        <img src="files/194549_billede_opg2.jpg" alt="" width="100%">
+                                    </div>
+                                    <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;width:40px;">&nbsp;</td>
+                                <td colspan="2" >
+                                    <br />
+                                    <table style="margin-left: 10%; width: 70%; border: 1px solid black; border-collapse: collapse; text-align: center;" cellPadding="10">
+                                        <tr style="background-color: #82d0f5;">
+                                            <td style="width: 33%; border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                Anna<br />tid (sek.)
+                                            </td>
+                                            <td style="width: 33%; border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                Petra<br />tid (sek.)
+                                            </td>
+                                            <td style="width: 33%; border-bottom: 1px solid black;">
+                                                Sigrid<br />tid (sek.)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                45,9
+                                            </td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                44,9
+                                            </td>
+                                            <td style="border-bottom: 1px solid black;">
+                                                45,2
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                44,7
+                                            </td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                45,0
+                                            </td>
+                                            <td style="border-bottom: 1px solid black;">
+                                                44,8
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                45,9
+                                            </td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                44,8
+                                            </td>
+                                            <td style="border-bottom: 1px solid black;">
+                                                45,0
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                45,3
+                                            </td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                45,0
+                                            </td>
+                                            <td style="border-bottom: 1px solid black;">
+                                                44,3
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                44,5
+                                            </td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                44,5
+                                            </td>
+                                            <td style="border-bottom: 1px solid black;">
+                                                44,8
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                44,8
+                                            </td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                44,9
+                                            </td>
+                                            <td style="border-bottom: 1px solid black;">
+                                                44,9
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                45,0
+                                            </td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                44,8
+                                            </td>
+                                            <td style="border-bottom: 1px solid black;">
+                                                44,5
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                44,1
+                                            </td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                45,0
+                                            </td>
+                                            <td style="border-bottom: 1px solid black;">
+                                                44,5
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                44,2
+                                            </td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                44,8
+                                            </td>
+                                            <td style="border-bottom: 1px solid black;">
+                                                44,7
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                45,0
+                                            </td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black;">
+                                                44,5
+                                            </td>
+                                            <td style="border-bottom: 1px solid black;">
+                                                44,5
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <br /><br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;width:40px;">&nbsp;</td>
+                                <td colspan="2" style="vertical-align: text-top; padding-right: 6%;">
+                                    Skøjteløbernes træner skal udvælge én af løberne til en konkurrence i 500 m hurtigløb.
+                                    <br /><br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"><span class="box blue">2.1</span></td>
+                                <td colspan="2">
+                                    <div style="padding-top:calc(0.1em + 2px);">Du skal sammenligne data for de tre skøjteløbere og skrive en begrundelse, træneren kan have for at vælge hver af de tre skøjteløbere. Det vil sige en begrundelse for at vælge
+                                        <ul style="line-height: 1.6em; padding: 0; margin-left: 4%; margin-top: 0.15em;">
+                                            <li>Anna</li>
+                                            <li>Petra</li>
+                                            <li>Sigrid.</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="width:30%;position:absolute;top:0;right:0;">
+                            <img src="files/194549_billede_opg2.jpg" alt="" width="100%">
+                            <span style="font-size: 80%;">Foto: Colourbox</span>
+                        </div>
+                    </div>
+                    <br /><br /><br /><br />
+                </div>
+
+                <!--Opgave 3-->
+                <div class="PAGE" data-id="7" data-parentid="0" data-layout="0" data-menutekst="Opgave 3">
+                    <div class="box-group">
+                        <div class="group">
+                            <h1 class="box blue header-number" style="margin-right:20px;">3</h1>
+                        </div>
+                        <div class="group fill">
+                            <span class="box fill blue" style="padding:2px 6px;justify-content:space-between;">
+                                <h2 class="header-title">Skiløb</h2>
+                                <span style="line-height: 28px;">Opgave 3 giver højst 9 point</span>
+                            </span>
+                        </div>
+                    </div>
+                    <br /><br />
+                    <div style="position:relative">
+                        <table style="width:100%;">
+                            <tr>
+                                <td style="vertical-align: top;width:40px;"></td>
+                                <td style="vertical-align: text-top; padding-right: 6%;">
+                                    <br /><br /><br />
+                                    Sofia er på skitur. Skitsen viser et tværsnit af en pist, hun løber på. Pisten har en konstant hældning på 8&deg;.
+                                    <br /><br /><br /><br />
+                                    <div class="svg" style="width:105%;">
+                                        <canvas width="215" height="100"></canvas>
+                                        <svg id="uuid-2f43e614-0489-4733-9022-e9667b889c66" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1275.84 592.2">
+                                            <image width="1276" height="592" transform="" xlink:href="files/194549_billede_opg3_2.png"/>
+                                            <text transform="translate(18.8 123.96) scale(.95 1)" style="font-family: ArialMT, Arial; font-size: 51px;;fill:rgba(0,0,0,0);">pistens højde</text>
+                                            <text transform="translate(8.76 276.99) scale(.85 1)" style="font-family: ArialMT, Arial; font-size: 80.17px;;fill:rgba(0,0,0,0);">ca. 56 m</text>
+                                            <text transform="translate(437.98 42.91) scale(.97 1)" style="font-family: ArialMT, Arial; font-size: 49.77px;;fill:rgba(0,0,0,0);">pistens længde</text>
+                                            <text transform="translate(553.44 219.17) rotate(13.4) scale(.96 1)" style="font-family: ArialMT, Arial; font-size: 80.17px;;fill:rgba(0,0,0,0);">ca. 400 m</text>
+                                            <text transform="translate(578.33 447.35) scale(.94 1)" style="font-family: ArialMT, Arial; font-size: 80.17px;;fill:rgba(0,0,0,0);">ca. 396 m</text>
+                                            <text transform="translate(987.35 378.12)" style="font-family: ArialMT, Arial; font-size: 51px;;fill:rgba(0,0,0,0);">8°</text>
+                                            <text transform="translate(809.08 564.12) scale(.96 1)" style="font-family: ArialMT, Arial; font-size: 51px;;fill:rgba(0,0,0,0);">pistens hældning</text>
+                                            <text transform="translate(.45 579.01) scale(1.19 1)" style="font-family: ArialMT, Arial; font-size: 40.63px;;fill:rgba(0,0,0,0);">Skitse</text>
+                                        </svg>
+                                    </div>
+                                    <br /><br />
+                                </td>
+                                <td style="width:35%; vertical-align: text-top;">
+                                    <br /><br />
+                                    <div style="width:100%;">
+                                        <img src="files/194549_billede_opg3_1.jpg" alt="" style="width: 100%; margin-top: -2.35em;">
+                                    </div>
+                                    <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"><span class="box blue">3.1</span></td>
+                                <td colspan="2">
+                                    <div style="padding-top:calc(0.1em + 2px);">Tegn tværsnittet i et målestoksforhold, du selv bestemmer. Du behøver ikke at skrive, hvilket målestoksforhold du bruger.
+                                    <br /><br /><br />
+                                    Sofia prøver en anden pist, som også har en konstant hældning på 8&deg;. Længden af denne pist er ca. 1200 m.
+                                    <br /><br />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"><span class="box blue">3.2</span></td>
+                                <td colspan="2">
+                                    <div style="padding-top:calc(0.1em + 2px);">Forklar, hvorfor højden af denne pist er ca. 3 gange så stor som højden af pisten på skitsen.
+                                    <br /><br /><br />
+                                    Pister, der har en hældning på 8&deg; til 15&deg;, kalder man blå pister. Sofias mor påstår, at en sådan hældning svarer til et gennemsnitligt fald på 15 % til 25 %.
+                                    <br /><br />
+                                    </div>
+                                </td>
+                            </tr>
+                            </table>
+                            <table>
+                                <tr>    
+                                    <td style="vertical-align: text-top; width: 42px;"><span class="box blue">3.3</span></td>
+                                    <td style="vertical-align: text-top;">
+                                        <div style="padding-top:calc(0.1em + 2px);">Brug formlen i den gule boks til at undersøge, om Sofias mor har ret.
+                                        </div>
+                                    </td>
+                                    <td style="width:45%; vertical-align: top;">
+                                        <br /><br />
+                                        <div class="svg" style="width:100%; margin-top: -2.1em;">
+                                            <canvas width="287" height="100"></canvas>
+                                            <svg id="uuid-08cbb255-3a1e-4f86-a070-babcce955430" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 743.91 258.97">
+                                                <image width="744" height="259" transform="" xlink:href="files/194549_billede_opg3_3.png"/>
+                                                <text transform="translate(48.51 59.17) scale(1.06 1)" style="font-family: ArialMT, Arial; font-size: 32px;;fill:rgba(0,0,0,0);">Gennemsnitligt fald</text>
+                                                <text transform="translate(383.08 41.51)" style="font-family: ArialMT, Arial; font-size: 32px;;fill:rgba(0,0,0,0);">h</text>
+                                                <text transform="translate(384.56 71.34)" style="font-family: ArialMT, Arial; font-size: 32px;;fill:rgba(0,0,0,0);">a</text>
+                                                <text transform="translate(49.07 151)" style="font-family: ArialMT, Arial; font-size: 32px;;fill:rgba(0,0,0,0);">h</text>
+                                                <text transform="translate(352.54 215.85)" style="font-family: ArialMT, Arial; font-size: 32px;;fill:rgba(0,0,0,0);">a</text>
+                                            </svg>
+                                        </div>
+                                        <br />
+                                    </td>
+                                </tr>
+                            </table>
+                        <br />
+                        <div style="width:35%;position:absolute;top:0;right:0;">
+                            <img src="files/194549_billede_opg3_1.jpg" alt="" width="100%">
+                            <span style="font-size: 80%;">Foto: Opgavekommissionen i matematik</span>
+                        </div>
+                    </div>
+                    <br /><br /><br /><br />
+                </div>
+
+                <!--Opgave 4-->
+                <div class="PAGE" data-id="8" data-parentid="0" data-layout="0" data-menutekst="Opgave 4">
+                    <div class="box-group">
+                        <div class="group">
+                            <h1 class="box blue header-number" style="margin-right:20px;">4</h1>
+                        </div>
+                        <div class="group fill">
+                            <span class="box fill blue" style="padding:2px 6px;justify-content:space-between;">
+                                <h2 class="header-title">Temperatur</h2>
+                                <span style="line-height: 28px;">Opgave 4 giver højst 10 point</span>
+                            </span>
+                        </div>
+                    </div>
+                    <br /><br />
+
+                    <div style="position:relative">
+                        <table style="width:100%;">
+                            <tr>
+                                <td style="vertical-align: top;width:40px;"></td>
+                                <td style="vertical-align: text-top; padding-right: 6%; padding-top: 5%;">
+                                    <br />
+                                    I Danmark måler vi temperatur i grader celsius. I nogle andre lande bruger man grader fahrenheit.
+                                    <br /><br />
+                                    Formlen i den gule boks viser sammenhængen mellem temperaturer målt i grader celsius og grader fahrenheit.
+                                    <br /><br />
+                                </td>
+                                <td style="width:35%;">
+                                    <div style="width:100%;">
+                                        <img src="files/194549_billede_opg4.jpg" alt="" width="100%">
+                                    </div>
+                                    <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;width:40px;">&nbsp;</td>
+                                <td colspan="2" >
+                                    <br />
+                                    <table style="margin-left: 20%; padding:9px; background: #ffed00; width:50%; border: 1px solid black; border-collapse: collapse;" cellPadding="20">
+                                        <tr>
+                                            <td>
+                                                <i>F</i>&nbsp;=&nbsp;1,8&nbsp;&middot;&nbsp;<i>C</i>&nbsp;+&nbsp;32
+                                                <br /><br />
+                                                <i>C</i> er temperaturen målt i grader celsius.
+                                                <br /><br />
+                                                <i>F</i> er temperaturen målt i grader fahrenheit.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <br /><br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"><span class="box blue">4.1</span></td>
+                                <td colspan="2">
+                                    <div style="padding-top:calc(0.1em + 2px);">Hvor mange grader fahrenheit svarer 0 grader celsius til?
+                                        <br /><br /><br />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"><span class="box blue">4.2</span></td>
+                                <td colspan="2">
+                                    <div style="padding-top:calc(0.1em + 2px);">Hvor mange grader celsius svarer 212 grader fahrenheit til?
+                                        <br /><br /><br />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"><span class="box blue">4.3</span></td>
+                                <td colspan="2">
+                                    <div style="padding-top:calc(0.1em + 2px);">Tegn en graf, der viser sammenhængen mellem temperaturer målt i grader celsius og grader fahrenheit.
+                                        <br /><br /><br />
+                                        Magnus påstår, at man kan omskrive formlen i den gule boks til <i>C</i>&nbsp;=&nbsp;<span class="frac"><div><i>F</i></div><div>1,8</div></span>&nbsp;-&nbsp;32.
+                                        <br /><br />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top; width: 42px;"><span class="box blue">4.4</span></td>
+                                <td colspan="2">
+                                    <div style="padding-top:calc(0.1em + 2px);">
+                                        <div style="text-align: left; line-height: 1.4em; margin-top: -0.1em;">Har Magnus ret i sin påstand?
+                                            <br /><br /><br />
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="width:35%;position:absolute;top:0;right:0;">
+                            <img src="files/194549_billede_opg4.jpg" alt="" width="100%">
+                            <span style="font-size: 80%;">Foto: Opgavekommissionen i matematik</span>
+                        </div>
+                    </div>
+                    <br /><br /><br /><br />
+                </div>
+
+                <!--Opgave 5-->
+                <div class="PAGE" data-id="9" data-parentid="0" data-layout="0" data-menutekst="Opgave 5">
+                    <div class="box-group">
+                        <div class="group">
+                            <h1 class="box blue header-number" style="margin-right:20px;">5</h1>
+                        </div>
+                        <div class="group fill">
+                            <span class="box fill blue" style="padding:2px 6px;justify-content:space-between;">
+                                <h2 class="header-title">Middeltemperatur i januar</h2>
+                                <span style="line-height: 28px;">Opgave 5 giver højst 8 point</span>
+                            </span>
+                        </div>
+                    </div>
+                    <br /><br />
+                    <table style="width:100%;">
+                        <tr>
+                            <td style="vertical-align: top;width:40px;"></td>
+                            <td>
+                                Punkterne i diagrammet herunder viser middeltemperaturerne for januar hvert år fra 1874 til 2021. I filen <a href="#" onclick="UVM.view.funcLoadMenu(13, 0); UVM.view.funcLoadContent(13, 0);">JANUAR_DEC_2022</a> er en liste med middeltemperaturerne.
+                                <br /><br /><br />
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td colspan="3">
+                                            <div class="svg" style="width:100%;">
+                                                <canvas width="192" height="100"></canvas>
+                                                <svg id="uuid-897b3195-ae9f-4485-b611-222adecbd7d4" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1451.82 755.91">
+                                                    <image width="1452" height="756" transform="" xlink:href="files/194549_billede_opg5.png"/>
+                                                    <text transform="translate(44.58 29.45) scale(1.02 1)" style="font-family: ArialMT, Arial; font-size: 33px;;fill:rgba(0,0,0,0);">Middeltemperatur i grader celsius</text>
+                                                    <text transform="translate(13.91 94.12)" style="font-family: ArialMT, Arial; font-size: 22px;;fill:rgba(0,0,0,0);">6</text>
+                                                    <text transform="translate(13.91 144.45)" style="font-family: ArialMT, Arial; font-size: 22px;;fill:rgba(0,0,0,0);">5</text>
+                                                    <text transform="translate(14.24 193.79)" style="font-family: ArialMT, Arial; font-size: 22px;;fill:rgba(0,0,0,0);">4</text>
+                                                    <text transform="translate(14.24 244.12)" style="font-family: ArialMT, Arial; font-size: 22px;;fill:rgba(0,0,0,0);">3</text>
+                                                    <text transform="translate(14.58 293.79)" style="font-family: ArialMT, Arial; font-size: 22px;;fill:rgba(0,0,0,0);">2</text>
+                                                    <text transform="translate(14.24 341.79)" style="font-family: ArialMT, Arial; font-size: 22px;;fill:rgba(0,0,0,0);">1</text>
+                                                    <text transform="translate(13.91 391.12)" style="font-family: ArialMT, Arial; font-size: 22px;;fill:rgba(0,0,0,0);">0</text>
+                                                    <text transform="translate(4.61 442.12) scale(1.09 1)" style="font-family: ArialMT, Arial; font-size: 22px;;fill:rgba(0,0,0,0);">-1</text>
+                                                    <text transform="translate(5.49 491.82) scale(1.09 1)" style="font-family: ArialMT, Arial; font-size: 22px;;fill:rgba(0,0,0,0);">-2</text>
+                                                    <text transform="translate(4.49 540.82) scale(1.09 1)" style="font-family: ArialMT, Arial; font-size: 22px;;fill:rgba(0,0,0,0);">-3</text>
+                                                    <text transform="translate(5.91 589.79)" style="font-family: ArialMT, Arial; font-size: 22px;;fill:rgba(0,0,0,0);">-4</text>
+                                                    <text transform="translate(6.91 640.45)" style="font-family: ArialMT, Arial; font-size: 22px;;fill:rgba(0,0,0,0);">-5</text>
+                                                    <text transform="translate(6.58 689.45)" style="font-family: ArialMT, Arial; font-size: 22px;;fill:rgba(0,0,0,0);">-6</text>
+                                                    <text transform="translate(6.24 737.79)" style="font-family: ArialMT, Arial; font-size: 22px;;fill:rgba(0,0,0,0);">-7</text>
+                                                    <text transform="translate(100.24 409.12) scale(1.1 1)" style="font-family: ArialMT, Arial; font-size: 22px;;fill:rgba(0,0,0,0);">1880</text>
+                                                    <text transform="translate(273.58 409.12) scale(1.11 1)" style="font-family: ArialMT, Arial; font-size: 22px;;fill:rgba(0,0,0,0);">1900</text>
+                                                    <text transform="translate(450.91 408.79)" style="font-family: ArialMT, Arial; font-size: 22px;;fill:rgba(0,0,0,0);">1920</text>
+                                                    <text transform="translate(622.91 409.45) scale(1.04 1)" style="font-family: ArialMT, Arial; font-size: 22px;;fill:rgba(0,0,0,0);">1940</text>
+                                                    <text transform="translate(796.24 408.79)" style="font-family: ArialMT, Arial; font-size: 22px;;fill:rgba(0,0,0,0);">1960</text>
+                                                    <text transform="translate(969.58 409.45)" style="font-family: ArialMT, Arial; font-size: 22px;;fill:rgba(0,0,0,0);">1980</text>
+                                                    <text transform="translate(1143.91 408.45)" style="font-family: ArialMT, Arial; font-size: 22px;;fill:rgba(0,0,0,0);">2000</text>
+                                                    <text transform="translate(1316.58 408.12)" style="font-family: ArialMT, Arial; font-size: 22px;;fill:rgba(0,0,0,0);">2020</text>
+                                                    <text transform="translate(1407.26 411.45) scale(1.27 1)" style="font-family: ArialMT, Arial; font-size: 33px;;fill:rgba(0,0,0,0);">År</text>
+                                                </svg>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <br /><br /><br />
+                            </td>
+                        </tr>
+                       <tr>
+                            <td style="vertical-align: top; width: 42px;"><span class="box blue">5.1</span></td>
+                            <td>
+                                <div style="padding-top:calc(0.1em + 2px);">
+                                    Hvor mange år var middeltemperaturen for januar over 4 grader celsius?
+                                    <br /><br /><br />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; width: 42px;"><span class="box blue">5.2</span></td>
+                            <td>
+                                <div style="padding-top:calc(0.1em + 2px);">
+                                    Hvad var middeltemperaturen for januar i den 30-årige periode fra 1992 til 2021?
+									<br /><br /><br />
+                                    Magnus har læst, at middeltemperaturerne for januar steg i perioden fra 1874 til 2021.
+                                    <br /><br />
+								</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; width: 42px;"><span class="box blue">5.3</span></td>
+                            <td>
+                                <div style="padding-top:calc(0.1em + 2px);">
+                                    Er du enig i, at middeltemperaturerne steg? Du skal bruge datasættet til at begrunde dit svar.
+                                    <br /><br /><br />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+					<br /><br /><br /><br />
+                </div>
+
+                <!--Opgave 6-->
+                <div class="PAGE" data-id="10" data-parentid="0" data-layout="0" data-menutekst="Opgave 6">
+                    <div class="box-group">
+                        <div class="group">
+                            <h1 class="box blue header-number" style="margin-right:20px;">6</h1>
+                        </div>
+                        <div class="group fill">
+                            <span class="box fill blue" style="padding:2px 6px;justify-content:space-between;">
+                                <h2 class="header-title">En regneopskrift</h2>
+                                <span style="line-height: 28px;">Opgave 6 giver højst 12 point</span>
+                            </span>
+                        </div>
+                    </div>
+                    <table style="width:100%;">
+                        <tr>
+                            <td style="vertical-align: top;width:40px;"></td>
+                            <td colspan="2" style="vertical-align: text-top; padding-right: 3%;">
+                                <br /><br />
+                                Anna har tegnet en cirkel med en diameter og to linjestykker:
+                                <br /><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;width:40px;"></td>
+                            <td colspan="2" style="vertical-align: text-top; padding-right: 3%;">
+                                <table style="margin-left: 10%; width:80%; border: 1px solid black; border-collapse: collapse; text-align: left;" cellPadding="10">
+                                    <tr>
+                                        <td style="width: 33%; border-right: 1px solid black; border-bottom: 1px solid black; background-color: #82d0f5; text-align: center;">
+                                            Trin
+                                        </td>
+                                        <td style="width: 33%; border-right: 1px solid black; border-bottom: 1px solid black; background-color: #82d0f5; text-align: center;">
+                                            Eksempel
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border-right: 1px solid black; border-bottom: 1px solid black; vertical-align: text-top;">A: Vælg et tal.</td>
+                                        <td style="border-right: 1px solid black; border-bottom: 1px solid black; vertical-align: text-top;">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border-right: 1px solid black; border-bottom: 1px solid black; vertical-align: text-top;">B: Læg 2 til tallet i trin A.</td>
+                                        <td style="border-right: 1px solid black; border-bottom: 1px solid black; vertical-align: text-top;">10&nbsp;+&nbsp;2&nbsp;=&nbsp;12</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border-right: 1px solid black; border-bottom: 1px solid black; vertical-align: text-top;">C: Gang resultatet i trin B med 6.</td>
+                                        <td style="border-right: 1px solid black; border-bottom: 1px solid black; vertical-align: text-top;">12&nbsp;&middot;&nbsp;6&nbsp;=&nbsp;72</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border-right: 1px solid black; border-bottom: 1px solid black; vertical-align: text-top;">D: Divider resultatet i trin C med 3.</td>
+                                        <td style="border-right: 1px solid black; border-bottom: 1px solid black; vertical-align: text-top;">72&nbsp;:&nbsp;3&nbsp;=&nbsp;24</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border-right: 1px solid black; vertical-align: text-top;">E: Træk 4 fra resultatet i trin D.</td>
+                                        <td style="border-right: 1px solid black; vertical-align: text-top;">24&nbsp;-&nbsp;4&nbsp;=&nbsp;20</td>
+                                    </tr>
+                                </table>
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding-top:4%; width: 42px;"><span class="box blue">6.1</span></td>
+                            <td style="vertical-align: text-top; padding-top:4%;">
+                                <div style="padding-top:calc(0.1em + 2px);">
+                                    Hvilket tal ender man med i trin E, hvis man vælger tallet 5 i trin A?
+                                    <br /><br /><br />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; width: 42px;"><span class="box blue">6.2</span></td>
+                            <td colspan="2">
+                                <div style="padding-top:calc(0.1em + 2px);">
+                                    Hvilket tal skal man vælge i trin A, hvis man vil ende med tallet 2 i trin E?
+                                    <br /><br /><br />
+                                    Udtrykket i den blå ramme svarer til regneopskriften øverst.
+                                    <br /><br />
+                                    <div style="margin-left: 37%; border: 3px solid; border-color: #005ba9; width: 12%; text-align: center; padding: 0.5em;">
+                                        <span class="frac"><div>(<i>n</i>&nbsp;+&nbsp;2)&nbsp;&middot;&nbsp;6</div><div>3</div></span>&nbsp;-&nbsp;4
+                                    </div>
+                                    <br /><br />
+                                    Sofia har prøvet at omskrive udtrykket i den blå ramme, men hun har lavet nogle fejl:
+                                    <br /><br />
+                                    <img src="files/194549_billede_opg6.png" alt="" style="width:82%; margin-left:2%;" />
+                                    <br /><br />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; width: 42px;"><span class="box blue">6.3</span></td>
+                            <td colspan="2">
+                                <div style="padding-top:calc(0.1em + 2px);">
+                                    Du skal forklare, hvilke fejl Sofia har lavet.
+                                    <br /><br /><br />
+                                    I tabellen herunder står en ny regneopskrift.
+                                    <br /><br />
+                                    <table style="margin-left: 10%; width:80%; border: 1px solid black; border-collapse: collapse; text-align: left;" cellPadding="10">
+                                        <tr>
+                                            <td style="width: 33%; border-right: 1px solid black; border-bottom: 1px solid black; background-color: #82d0f5; text-align: center;">
+                                                Trin
+                                            </td>
+                                            <td style="width: 33%; border-right: 1px solid black; border-bottom: 1px solid black; background-color: #82d0f5; text-align: center;">
+                                                Eksempel
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black; vertical-align: text-top;">A: Vælg et tal.</td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black; vertical-align: text-top;">10</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black; vertical-align: text-top;">B: Læg 3 til tallet i trin A.</td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black; vertical-align: text-top;">10&nbsp;+&nbsp;3&nbsp;=&nbsp;13</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black; vertical-align: text-top;">C: Gang resultatet i trin B med 6.</td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black; vertical-align: text-top;">13&nbsp;&middot;&nbsp;6&nbsp;=&nbsp;78</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black; vertical-align: text-top;">D: Træk 18 fra resultatet i trin C.</td>
+                                            <td style="border-right: 1px solid black; border-bottom: 1px solid black; vertical-align: text-top;">78&nbsp;-&nbsp;18&nbsp;=&nbsp;60</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-right: 1px solid black; vertical-align: text-top;">E: Divider resultatet fra trin D med 2.</td>
+                                            <td style="border-right: 1px solid black; vertical-align: text-top;">60&nbsp;:&nbsp;2&nbsp;=&nbsp;30</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <br /><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; width: 42px;"><span class="box blue">6.4</span></td>
+                            <td colspan="2">
+                                <div style="padding-top:calc(0.1em + 2px);">
+                                    Skriv et udtryk, der svarer til den nye regneopskrift i tabellen, når <i>m</i> er det tal, man vælger i trin A.
+                                    <br /><br />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <br /><br /><br /><br />
+                </div>
+
+                <!--Opgave 7-->
+                <div class="PAGE" data-id="11" data-parentid="0" data-layout="0" data-menutekst="Opgave 7">
+                    <div class="box-group">
+                        <div class="group">
+                            <h1 class="box blue header-number" style="margin-right:20px;">7</h1>
+                        </div>
+                        <div class="group fill">
+                            <span class="box fill blue" style="padding:2px 6px;justify-content:space-between;">
+                                <h2 class="header-title">Firkanter med arealet 4</h2>
+                                <span style="line-height: 28px;">Opgave 7 giver højst 8 point</span>
+                            </span>
+                        </div>
+                    </div>
+                    <br /><br />
+                    <table style="width:100%;">
+                        <tr>
+                            <td style="vertical-align: top;width:40px;"></td>
+                            <td>
+                                Tegningen viser en firkant i et kvadratnet med gitterpunkter. Firkanten har alle 4 vinkelspidser i gitterpunkter, og firkantens areal er 4.
+                                <br /><br />
+                                <img src="files/194549_billede_opg7.png" alt="" style="width:50%; margin-left:20%;" />
+                                <br /><br /><br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; width: 42px;"><span class="box blue">7.1</span></td>
+                            <td>
+                                <div style="padding-top:calc(0.1em + 2px);">Du skal tegne andre firkanter med alle 4 vinkelspidser i gitterpunkter og med et areal på 4. Du skal tegne
+                                    <ul style="line-height: 1.6em; padding: 0; margin-left: 4%; margin-top: 0.5em;">
+                                        <li>et kvadrat</li>
+                                        <li>et rektangel</li>
+                                        <li>et parallelogram</li>
+                                        <li>et trapez</li>
+                                        <li>en rombe.</li>
+                                    </ul>
+                                    Alle dine firkanter skal være forskellige. Skriv ved hver af dine tegninger, hvilken type firkant det er. Du kan bruge svararket.
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br /><br /><br /><br />
+                </div>
+
+                <!--Mellemrum-->
+                <div class="PAGE" data-id="12" data-parentid="0" data-layout="0" data-menutekst=""></div>
+
+
+                <!--Bilag til opgave 2 og 5-->
+                <div class="PAGE" data-id="13" data-parentid="0" data-layout="0" data-menutekst="Bilag til opgave 2 og 5">
+                    <h1>Bilag til opgave 2 og 5</h1>
+                    <br />
+                    <a href="files/194549_tider_dec_2022.xlsx" target="_blank">Excelfil til opgave 2</a>
+                    <br />
+                    <a href="files/194549_januar_dec_2022.xlsx" target="_blank">Excelfil til opgave 5</a>
+                    <br /><br /><br /><br />
+                </div>
+
+                <!--Bilag til opgave 7-->
+                <div class="PAGE" data-id="14" data-parentid="0" data-layout="2" data-menutekst="Svarark til opgave 7">
+					<a class="pdfLink" id="pdfLink14" href="files/194549_svarark.pdf" target="_blank">LYD</a>
+				</div>
+
+
+            </div> <!-- END CONTENT -->
+        </div> <!-- END MAIN -->
+        <div id="bottomMenu"></div>
+    </div>
+</body>
+
+</html>

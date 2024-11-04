@@ -1,0 +1,48 @@
+.box-group {
+    display:flex;
+    align-items: flex-end;
+}
+
+.group.fill {
+    width:100%;
+}
+
+.box {
+    display:inline-flex;
+    border:2px solid transparent;
+    padding:0.1em 6px;
+    margin:0;
+    box-sizing: border-box;
+    font-weight:bold;
+    justify-content: center;
+    align-items: center;
+}
+.box.fill {
+    width:100%;
+}
+.box.blue {
+    background-color:#82d0f5;
+    border:2px solid #009ee3;
+}
+.box.orange {
+    background-color:#ffe3aa;
+    border:2px solid #fbb900;
+}
+
+.right {
+    display: inline-block;
+    margin-left: auto;
+}
+
+.header-number {
+    font-size:35px;
+    line-height:35px;
+}
+
+.header-title {
+    display:inline-block;
+    margin:0;
+    font-size:18px;
+    line-height:18px;
+    padding: 5px 0;
+}
